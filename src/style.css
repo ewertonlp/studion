@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --color-primary: #ffc500;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
 }
 
 body {
@@ -20,9 +21,13 @@ ul {
     list-style: none;
 }
 
+h6 {
+    margin: 0;
+}
 
 .navbar {
     position: fixed;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 9fr;
     top: 0;
@@ -34,7 +39,7 @@ ul {
     padding: 0 1rem;
     width: 100vw;
     height: 7.75rem;
-
+    
 }
 
 .navbar__links {
@@ -73,4 +78,63 @@ ul {
 
 .copy--primary {
     color: var(--color-primary);
+}
+
+#slider {
+    background-color: #000;
+    color: #fff;
+}
+
+.slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+.slide__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+}
+
+.slide__copy h2 {
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    color: var(--color-primary);
+    border-radius: 2rem;
+    border: .125rem solid #fff;
+    background: unset;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.4s all ease;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
 }
