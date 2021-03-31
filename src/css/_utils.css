@@ -1,0 +1,10 @@
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+
+.btn--institucional:hover {
+    color: var(--color-copy);
+    background: unset;
+}
