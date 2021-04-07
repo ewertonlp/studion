@@ -1,0 +1,87 @@
+.evento {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.evento h3 {
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 1.5625rem;
+}
+
+
+
+.evento__info,
+.evento__picture {
+  padding: 4rem 0;
+}
+
+.evento__info span {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 0.625rem;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.6875rem;
+}
+
+.evento__info__container {
+    margin: 0;
+    width: 700px;
+}
+
+.evento_picture__container {
+  width: 150px;
+}
+
+.evento__picture {
+  margin: 0;
+}
+
+.evento__picture__container img {
+  height: 11.875rem;
+}
+
+.evento__info__container {
+  float: left;
+  padding-top: 1.875rem;
+}
+
+.evento__info__container h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.evento__info__text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5.75rem;
+    margin: 0;
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9375rem;
+}
+
+.evento__info__text h4 {
+    font-size: 0.9375rem;
+}
+
+.evento__info__text p {
+    margin: 0;
+    font-size: 1.0625rem;
+}
+
+.btn-buy {
+    padding: 0;
+    max-height: 3.5rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: .9375rem;
+}
+
+.bg-gray {
+    background-color: #eee;
+}

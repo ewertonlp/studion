@@ -14,6 +14,8 @@
 
 /* PÁGINAS */
 @import "./css/_home.css";
+@import "./css/_empresa.css";
+@import "./css/_eventos.css";
 @import "./css/_contacts.css";
 
 
