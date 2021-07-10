@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Studion</title>
+    <title>Galeria - StudiOn</title>
   </head>
-
   <body>
     <nav class="navbar">
       <div class="container navbar__container">
@@ -21,77 +28,82 @@
         <ul class="navbar__links">
           <li><a href="./empresa.html">Empresa</a></li>
           <li><a href="./eventos.html">Eventos</a></li>
-          <li><a href="./galeria.html">Galeria</a></li>
+          <li><a class="active" href="./galeria.html">Galeria</a></li>
           <li><a href="./depoimentos.html">Depoimentos</a></li>
-          <li><a class="active" href="./contact.html">Contato</a></li>
+          <li><a href="./contact.html">Contato</a></li>
         </ul>
       </div>
     </nav>
 
     <header>
       <div class="hero">
-        <img src="./images/contact.jpg" alt="" class="hero__background" />
+        <img src="./images/galeria.jpg" alt="" class="hero__background" />
         <div class="container hero_container">
           <div class="hero__copy">
-            <h2>.contato</h2>
+            <h4>confira algumas fotos</h4>
+            <h2>.galeria</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, sequi porro tempora quasi placeat mollitia soluta. Ut
-              consectetur, voluptatum eligendi quod iste delectus! Eligendi,
-              minus officia atque incidunt repellat libero?
+              Laudantium, sequi porro tempora quasi placeat mollitia soluta.
             </p>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="contact">
-        <section class="contact__info">
-          <div class="contact__info_container">
-            <h3>Liga pra gente</h3>
-            <span
-              ><i class="fas fa-phone fa-flip-horizontal"></i>+55 48 3223 -
-              5769</span
-            >
-            <span> <i class="fab fa-whatsapp"></i>+55 48 99943 - 7777 </span>
-            <h3>Venha conhecer a nossa casa</h3>
-            <span>
-              <i class="fas fa-map-marker-alt"></i>Rua Miguel Daux, 129 -
-              Coqueiros Florianópolis / SC
-            </span>
-          </div>
-        </section>
-
-        <section class="contact__form">
-          <form class="contact__form__container" action="">
-            <h3>Deixe a sua mensagem</h3>
-            <label for="name">Seu nome</label>
-            <input type="text" id="name" />
-            <label for="email">Seu email</label>
-            <input type="email" id="email" />
-            <label for="message">Sua mensagem</label>
-            <input type="text" id="message" />
-            <button class="btn btn--contact" type="submit">Enviar</button>
-          </form>
-        </section>
-      </section>
-
-      <section class="maps">
-        <div class="maps__mapouter">
-          <div class="maps__gmap_canvas">
-            <iframe
-              width="100%"
-              src="https://maps.google.com/maps?q=Rua%20Miguel%20Daux,%20129%20-%20Coqueiros%20Florian%C3%B3polis%20/%20SC&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><br />
-          </div>
+    <main class="gallery">
+      <div class="container gallery-container">
+        <div class="gallery-item w-1 h-1">
+          <img
+            class="img-gallery"
+            src="./images/antenna-ohNCIiKVT1g-unsplash(1).jpg"
+            alt=""
+          />
         </div>
-      </section>
+        <div class="gallery-item w-2 h-1">
+          <img
+            class="img-gallery"
+            src="./images/fidel-fernando-249DzAuJTqQ-unsplash(1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-item w-1 h-1">
+          <img
+            class="img-gallery"
+            src="./images/ron-smith-tknOyEefp2k-unsplash(1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-item w-2 h-1">
+          <img class="img-gallery" src="./images/foto-03.jpg" alt="" />
+        </div>
+        <div class="gallery-item w-2 h-1">
+          <img
+            class="img-gallery"
+            src="./images/andre-mosele-b6H12dhARzk-unsplash(1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-item w-1 h-2">
+          <img class="img-gallery" src="./images/foto-05.jpg" alt="" />
+        </div>
+        <div class="gallery-item w-2 h-1">
+          <img class="img-gallery" src="./images/foto-06.jpg" alt="" />
+        </div>
+        <div class="gallery-item w-1 h-1">
+          <img class="img-gallery" src="./images/foto-07.jpg" alt="" />
+        </div>
+        <div class="gallery-item w-2 h-1">
+          <img
+            class="img-gallery"
+            src="./images/antoine-julien-r3XvSBEQQLo-unsplash(1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-item w-1 h-1">
+          <img class="img-gallery" src="./images/foto-09.jpg" alt="" />
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -104,7 +116,7 @@
           <label for="email">Receba news e promoções</label>
           <div class="footer__email">
             <input id="email" type="email" placeholder="email" />
-            <button type="submit">
+            <button class="footer__form-button" type="submit">
               <i class="fas fa-paper-plane fa-2x"></i>
             </button>
           </div>
