@@ -1,84 +1,92 @@
 .empresa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .empresa h3 {
-    margin: 0;
-    margin-bottom: 1.875rem;
-    font-size: 1.5625rem;
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 1.5625rem;
 }
 
-
 .empresa__info {
-    margin-left: 24rem;
+  margin-left: 3rem;
+}
+
+.empresa__info_container,
+.empresa__model__container {
+  display: block;
+  width: 500px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .empresa__info {
+    margin-left: 10rem;
+  }
+
+  .empresa__info_container,
+  .empresa__model__container {
+    width: 480px;
+  }
 }
 
 .empresa__info,
 .empresa__model {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
-
 
 .empresa__info span {
-    display: grid;
-    grid-template-columns: 1.5rem auto;
-    gap: .625rem;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    line-height: 1.6875rem;
-}
-
-
-.empresa__info_container,
-.empresa__model__container {
-    width: 540px;
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 0.625rem;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.6875rem;
 }
 
 .empresa__model {
-    margin: 0;
+  margin: 0;
 }
 
-.empresa__model__container img{
-    height: 44.875rem;
+.empresa__model__container img {
+  height: 40rem;
 }
-
 
 .empresa__info__container {
-    float: right;
-    padding-top: 4.375rem;
-    padding-right: 9.25rem;
+  float: right;
+  padding-top: 4.375rem;
+  padding-right: 9.25rem;
 }
 
 .empresa__brand {
-    align-self: center;
-    background-color: var(--color-primary);
-    padding: 4.5rem 0 5.75rem 0;
+  align-self: center;
+  background-color: var(--color-primary);
+  padding: 4.5rem 0 5.75rem 0;
 }
 
 .empresa__brand__container h3 {
-    margin-bottom: 3.75rem;
-    text-align: center;
-    font-size: 1.5625rem;
-    font-weight: 700;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  font-size: 1.5625rem;
+  font-weight: 700;
 }
 
 .empresa__video__container {
-    position: relative;
-    justify-content: center;
+  position: relative;
+  justify-content: center;
 }
 
 .empresa__video__container img {
-    width: 63.375rem;
-    margin: 5.125rem 0;
+  width: 63.375rem;
+  margin: 5.125rem 0;
 }
 
 .empresa__video__container i {
-    position: absolute;
-    align-self: center;
-    top: 50%;
-    color: #fff;
-    z-index: 1;
+  position: absolute;
+  align-self: center;
+  top: 50%;
+  color: #fff;
+  z-index: 1;
 }

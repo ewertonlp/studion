@@ -1,16 +1,27 @@
 
-
 .footer {
     background-color: #000;
     color: #fff;
     padding: 0 1rem;
 }
 
+/* MOBILE */
 .footer__container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    gap: 3rem;
     align-items: center;
-    padding: 5.25rem 0 3.75rem 0;
+    padding: 3rem 0;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    .footer__container {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: unset;
+        padding: 5.25rem 0 3.75rem 0;
+    }
 }
 
 .logo-studion__subtitle {
@@ -18,15 +29,29 @@
 }
 
 .footer .logo-studion {
-    justify-self: start;
+    justify-self: center;
     margin: 0;
 }
 
+@media screen and (min-width: 1280px) {
+    .footer .logo-studion {
+        justify-self: start;
+    }
+}
+
+/* MOBILE */
 .footer__form {
     display: grid;
+    grid-template-columns: unset; 
     place-items: center;
-    grid-template-columns: 9ch auto; 
     gap: 1.25rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    .footer__form {
+        grid-template-columns: 9ch auto; 
+    }
 }
 
 .footer__form label {
@@ -52,6 +77,8 @@
     color: #000;
 }
 
+
+
 .footer__form input::placeholder {
     color: #000;
 }
@@ -72,15 +99,25 @@
     background-color: var(--color-copy);
 }
 
+/* MOBILE */
 .footer__social {
-    justify-self: end;
+    justify-self: center;
+    
 }
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+    .footer__social {
+        justify-self: end;
+    }
+}
+
 
 .footer__social a,
 .footer__social a:visited,
 .footer__social a:active {
     color: #fff;
-    margin-left: .2rem;
+    margin-left: .5rem;
 }
 
 .footer__social a .fa-twitter,

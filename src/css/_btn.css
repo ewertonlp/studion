@@ -33,9 +33,43 @@
     color: #fff;
 }
 
+.btn--institucional,
+.btn--quote {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .btn--institucional,
+    .btn--quote {
+        display: unset;
+        margin: unset;
+    }
+}
+
 
 .btn--quote {
     color: var(--color-copy);
     border-color: var(--color-copy);
     background: unset;
+}
+
+.btn--slide {
+    max-width: 12.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .btn--slide {
+        display: unset;
+        margin: unset;
+    }
+}
+.btn-buy {
+    border: none;
+}
+
+.btn-buy:hover {
+    box-shadow: .1rem .4rem .4rem #0004 ;
 }

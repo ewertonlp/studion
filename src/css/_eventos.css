@@ -1,19 +1,44 @@
 .evento {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: block;
+  padding: 0 1rem;
+}
+
+
+@media screen and (min-width:1280px) {
+  .evento {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
 }
 
 .evento h3 {
   margin: 0;
-  margin-bottom: 1.875rem;
-  font-size: 1.5625rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  
 }
 
+@media screen and (min-width: 1280px) {
+  .evento h3 {
+    margin: 0;
+    margin-bottom: 1.875rem;
+    font-size: 1.5625rem;
+  }
+}
 
-
-.evento__info,
+.evento__info {
+  padding: .5rem 0;
+}
 .evento__picture {
-  padding: 4rem 0;
+  padding: 2rem 0 1rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .evento__info,
+  .evento__picture {
+    padding: 2rem 0;
+  }
 }
 
 .evento__info span {
@@ -32,7 +57,14 @@
 }
 
 .evento_picture__container {
+  
   width: 150px;
+}
+
+@media screen and (min-width: 1280px) {
+  .evento_picture__container {
+    width: 150px;
+  }
 }
 
 .evento__picture {
@@ -40,7 +72,9 @@
 }
 
 .evento__picture__container img {
+
   height: 11.875rem;
+  align-self: center;
 }
 
 .evento__info__container {
@@ -70,8 +104,15 @@
 }
 
 .evento__info__text p {
-    margin: 0;
-    font-size: 1.0625rem;
+  margin: 0 1rem 2rem 0;
+  font-size: 1.0625rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .evento__info__text p {
+      margin: 0;
+      font-size: 1.0625rem;
+  }
 }
 
 .btn-buy {

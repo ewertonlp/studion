@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wgt@400;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wgt@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 @import "./css/_variables.css";
 @import "./css/_base.css";
@@ -16,14 +16,6 @@
 @import "./css/_home.css";
 @import "./css/_empresa.css";
 @import "./css/_eventos.css";
+@import "./css/_gallery.css";
+@import "./css/_depoimentos.css";
 @import "./css/_contacts.css";
-
-
-
-
-
-
-
-
-
-
